@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: rgb(8, 9, 82);
+}
+
+.div1{
+    background-color: rgb(8, 9, 82);
+    width: auto;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.text{
+    width: 700px;
+}
+
+.text h1 , h2 , p{
+    margin-top: 20px;
+}
+
+.text>h1{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.text>h2{
+    background-color: white;
+    color: blue;
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.text>h2:hover{
+    background: transparent;
+    color: white;
+    border: 3px solid blue;
+    box-shadow: 5px 5px 10px blue;
+    cursor: pointer;
+}
+
+.img>img{
+    height: 350px;
+    width: 100%;
+    transition: 1s ease-in;
+    background-color: rgb(20, 22, 113);
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+.img>img:hover{
+    box-shadow: 5px 10px 20px black;
+    border-radius: 50%;
+}
+
+.div2{
+    background-color: #e0dfdf;
+    color: rgb(8, 9, 82);;
+}
+
+.percent{
+    font-size: 1.2rem;
+    display: flex;
+    margin-left: 40px;
+    padding: 10px;
+    gap: 150px;
+}
+
+.p1-i{
+    font-size: 2rem;
+}
+
+.last-div{
+    background-color: #a5a5a5;
+    display: flex;
+}
+
+.left-side{
+    width: 45%;
+    height: auto;
+    font-size: 1.2rem;
+    padding: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.follow>p>i{
+    margin-right: 30px;
+}
+
+.contact>p>i{
+    margin-right: 30px;
+}
+
+.bars{
+    display: flex;
+    gap: 20px;
+}
+
+.w3{
+    margin-top: 15px;
+}
+
+.skills-text>p{
+    margin-top: 25px;
+}
+
+.hobbies>p>i{
+    margin-left: 30%;
+}
+
+.inter{
+    display: flex;
+    gap: 30px;
+}
+
+.right-div{
+    width: 55%;
+    padding: 30px;
+}
+
+.graduation{
+    display: flex;
+    gap: 40px;
+
+}
+
+.first-heading{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.h3>h3{
+    color: rgb(8, 9, 82);
+}
+
+.h3>p{
+    width: 600px;
+}
+
+.interest-language{
+    display: flex;
+    justify-content: space-between;
+}
+
+.interest{
+    width: 300px;
+}
+
+.interest-div{
+    display: flex;
+    gap: 20px;
+}
+
+.interest-div>p>i{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.language{
+    width: 300px;
+}
+
+.language-div{
+    display: flex;
+    gap: 20px;
+}
+
+.language-div>p{
+    margin-top: 55px;
+}
+
+@media (max-width: 1024px) {
+    .div1 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text > h2 {
+        margin: 0 auto;
+    }
+
+    .img > img {
+        max-width: 250px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .percent {
+        gap: 50px;
+        margin-left: 0;
+        justify-content: space-around;
+    }
+
+    .last-div {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-side,
+    .right-div {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .first-heading {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .h3 > p {
+        width: 100%;
+    }
+
+    .interest-language {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .interest-div,
+    .language-div {
+        flex-direction: column;
+    }
+
+    .language-div > p {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .percent {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-left: 0;
+    }
+
+    .bars {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .skills-text > p {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    .p1-i {
+        font-size: 1.5rem;
+    }
+
+    .hobbies > p > i {
+        margin-left: 10px;
+    }
+
+    .text > h1 {
+        font-size: 1.8rem;
+    }
+
+    .text > h2 {
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    .img > img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .first-heading {
+        width: 100%;
+    }
+
+    .follow > p, .contact > p {
+        font-size: 1rem;
+    }
+}
